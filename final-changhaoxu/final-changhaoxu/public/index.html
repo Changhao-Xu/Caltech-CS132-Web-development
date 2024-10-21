@@ -1,0 +1,77 @@
+<!--
+Name: Changhao Xu
+CS 132 Spring 2023 Final project
+Date: May 25, 2023
+This is the index.html page for my final project, an e-commerce store that sells keyboards.
+It includes navigation to different pages, including cart, contact, and faq pages.
+
+Faq page is Option 6, an additional view for a FAQ page that contains 8 frequently-asked questions.
+Note that some questions were inspired from Shopify and Saks.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    > <!-- use Source Sans Pro from google font -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="utils.js"></script>
+    <script defer src="index.js"></script>
+    <title>The Keyboard Shop</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>The Keyboard Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Store</a></li>
+          <li><a href="cart.html">Cart</a></li> <!-- a seperate html for shopping cart -->
+          <li><a href="contact.html">Contact</a></li> <!-- a seperate contact html for customer support -->
+          <li><a href="faq.html">FAQ</a></li> <!-- a FAQ page for keyboard related questions -->
+        </ul>
+      </nav>
+    </header>
+      
+    <main>
+      <div class="search-container">
+        <select>
+          <option value="all" selected>All</option>  
+          <option value="office">Office keyboards</option>
+          <option value="mechanical">Mechanical keyboards</option>
+          <option value="gaming">Gaming keyboards</option>
+          <option value="ergonomic">Ergonomic keyboards</option>
+          <option value="customized">Customized keyboards</option>
+        </select>
+  
+        <input type="text"
+               placeholder="Search for keyboards..."
+               id="search-results">
+      </div>
+      
+      <section id="store">
+      </section>
+      <section id="detail" class="hidden">
+      </section>
+      <p id="cart-message"></p>
+    </main>
+
+    <footer class="footer-container">
+      <p>&copy; Changhao Xu 2023</p>
+
+      <p>Keyboard images
+        &copy;
+        <a target="_blank" href="https://kbdfans.com/">KBDfans</a>
+        &copy;
+        <a target="_blank" href="https://amazon.com/">Amazon</a>
+      </p> 
+    </footer>
+  </body>
+</html>

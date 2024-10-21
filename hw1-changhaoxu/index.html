@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- 
+    Author: Changhao Xu
+    CS 132 Spring 2023
+    Date: April 22, 2023
+
+    This is the main html file for HW2, a webpage that introduces a brief history of HTML.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML and the Internet</title>
+</head>
+<body>
+    <header>
+        <div>
+            <code>&lt;HTML&gt;</code> <!-- code for inline, pre for block -->
+            <h1>Hyper-Text Markup Language</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#history"> History </a></li>
+                <li><a href="#html5"> HTML5 </a></li>
+                <li><a href="https://wikipedia.org/wiki/html"> Wikipedia </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <section id="examples">
+                <div>
+                    <pre>
+&lt;h1&gt;This is a Heading!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/h1&gt;
+&lt;img src="lorem.jpg" alt="Doggo Ipsum"&gt;</pre>
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <div>
+                        <p id="fake-h1">This is a Heading!</p>
+                        <p>This is a paragraph.</p>
+                        <img src="lorem.jpg" alt="Doggo Ipsum">
+                    </div>
+                    <p>Output</p>
+                </div>
+            </section>
+
+            <section id="history">
+                
+                <h2>History of HTML and the Internet</h2>
+
+                <figure id="xkcd">
+                    <img src="https://imgs.xkcd.com/comics/before_the_internet_2x.png" alt="XKCD Image">
+                    <figcaption>
+                        Source: <a href="https://xkcd.com/1348/">XKCD</a>
+                    </figcaption>
+                </figure>
+
+                <p>
+                    In 1989, the World Wide Web as we know it was invented by Tim Berners-Lee 
+                    at CERN (among other collaborators), motivated by the ability to 
+                    cross-reference research papers via the Internet.
+    
+                    HTML was invented shortly afterwards by Tim to provide text 
+                    markup capabilities. 
+                </p>
+                
+                <p>
+                    The Internet had been around for some time following the ARPANet 
+                    project in the  1960's, but the Web and HTML provided the ability 
+                    to navigate documents published online and communicate with 
+                    other hosts. The Domain Name System (DNS) was a very important 
+                    innovation that supported easy access to websites by mapping 
+                    easy-to-remember URL names to more cumbersome IP addresses. 
+                </p>
+
+                <p>
+                    During the development of HTML as a hypertext markup language, 
+                    Tim Berners-Lee  also invented HTTP (HyperText Transfer Protocol) 
+                    for retrieving document text via hypertext links.
+                </p>
+
+                <p>
+                    The world's <a href="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html">first web page</a>
+                     was launched on August 6 1991.
+                </p>
+
+                <p>
+                    One of the first text-based browsers was called Lynx, invented by Lou Montulli 
+                    and released in March 1993. Not long after, the Mosaic browser was released in 
+                    April 1993, supporting visual features in HTML like images, nested lists, and forms. 
+                    Mosaic would be replaced by the more popular browser Netscape the following year in
+                    November by Marc Andreesen, and takes credit for extending the HTML language with 
+                    new tags. These extensions unfortunately included presentational HTML tags that 
+                    could be used to design web pages, resulting in web pages losing their semantic meaning.
+                    
+                    Presentational tags would later be discouraged after the invention of CSS 
+                    by H&aring;kon Wium Lie in October 1994 to de-couple document 
+                    structure and style. 
+                </p>
+
+                <p>
+                    In 1994, the World Wide Consortium (W3C) was formed to establish a set of 
+                    open standards for the web, and still lives on to this day.
+                </p>
+
+                <figure id="w3c">
+                    <img src="https://www.w3.org/Icons/w3c_home.png" alt="W3C Logo Image">
+                    <figcaption>
+                        Source: <a href="https://www.w3.org/">w3.org</a>
+                    </figcaption>
+                </figure>
+                
+                <p>
+                    We have seen an exciting number of developments over the last three decades 
+                    in web publishing, including the addition of CSS and JavaScript to provide page 
+                    styling and interactivity.
+                </p>
+
+                <p>
+                    Every webpage you visit likely has at least three languages working together 
+                    to provide content structure, style, and interactivity. In 1995, Brendan 
+                    Elrich invented JavaScript (in 11 days!) as a language to interact with page 
+                    elements and listen to different events on the page. As with HTML and CSS,
+                    JavaScript has presented a number of standardization issues across browsers,
+                    notably Internet Explorer 6. But standards have improved significantly since
+                    HTML5, CSS3, and ES6 JavaScript. 
+                </p>
+            </section>
+
+            <section id="html5">
+
+                <h2>HTML5</h2>
+
+                <p>
+                    In 2014, HTML5 was released by W3C with various important new features, notably 
+                    special elements for semantic tags. Semantic tags have made for more standardized 
+                    content organization of web documents, improved accessibility features, and 
+                    improved ease and efficiency for search engines to crawl and rank websites (SEO).
+                </p>
+
+                <!-- Provided HTML (do not change anything within #html-comparison; use CSS selectors appropriately for styling without extra ids/classes )-->
+                <article id="html-comparison">
+                    <div id="html-structure">
+                        <div>div id="header"</div>
+                        <div class="main-structure">
+                            <div>div id="sidebar"</div>
+                            <div>
+                                <div>div class="post"</div>
+                                <div>div class="post"</div>
+                            </div>
+                        </div>
+                        <div>div id="footer"</div>
+                    </div>
+                    <div id="html5-structure">
+                        <div>header</div>
+                        <div class="main-structure">
+                            <div>aside</div>
+                            <div>
+                                <div>article</div>
+                                <div>article</div>
+                            </div>
+                        </div>
+                        <div>footer</div>
+                    </div>
+                </article>
+                <!-- End provided #html-structure code. Finish marking up the page with appropriate tags below. -->
+
+                <p>
+                    HTML5 has also added support for more media formats on the web with tags like 
+                    <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>, and has also added support for various form input 
+                    tags and attributes for different types of user input and client-side validation.
+                </p>
+                
+            </section>
+
+            <p>
+                It has been over 30 years since HTML was first created, but it still lives up to its 
+                original purpose.
+            </p>
+
+            <!-- Provided quote: Do not change. -->
+            <figure id="tim-quote">
+                <blockquote>
+                    <p>
+                        The Web as I envisaged it, we have not seen it yet. 
+                        The future is still so much bigger than the past.
+                    </p>
+                </blockquote>
+                <figcaption>- Tim Berners-Lee</figcaption>
+            </figure>
+        </section>
+
+        <aside>
+            <h3>Cool Websites</h3>
+            <ul>
+                <li><a href="https://www.apple.com/">Apple</a></li>
+                <li><a href="https://www.google.com/?gws_rd=ssl">Google</a></li>
+                <li><a href="https://leetcode.com/">Leetcode</a></li>
+                <li><a href="https://www.bloomberg.com/">Bloomberg</a></li>
+                <li><a href="https://seekingalpha.com/">Seeking Alpha</a></li>
+            </ul>
+        </aside>
+
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2023</p>
+        <code>&lt;/HTML&gt;</code>
+    </footer>
+
+</body>
+</html>

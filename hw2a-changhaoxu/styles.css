@@ -1,0 +1,93 @@
+/*
+  NAME: Changhao Xu
+  DATE: April 29, 2023
+  CS 132 Spring 2023
+
+  This is the styles.css file for HW2, a Set game website.
+  This file contains responsive layout methods for both #menu-view and #game-view using CSS.
+ */
+
+body, button, select, input {
+  text-align: center;
+  font-size: 12pt;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+button, select {
+  padding: 8px;
+  background-color: white;
+  border: 2pt solid black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 16pt;
+}
+
+#start-btn {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#menu-view > article {
+  background-color: #6F77ED;
+  border-radius: 0.35em;
+  border: 5pt solid black;
+}
+
+/* Above is given, begin HW2 below*/
+
+#menu-view > article, #details-bar {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#details-bar, #board, .card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#details-bar, .card {
+  align-items: center;
+}
+
+#details-bar {
+  background-color: black;
+  border-radius: 0.5em 0.5em 0 0;
+  font-size: 14pt;
+}
+
+.card {
+  width: 220px;
+  height: 95px;
+  border: 0.35em solid black;
+  border-radius: 1em;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.card > img {
+  height: 85%;
+}
+
+.card.selected {
+  box-shadow: 6px 6px #636363;
+}
+
+#board {
+  border-left: 5pt solid black;
+  border-right: 5pt solid black;
+  border-bottom: 5pt solid black;
+  flex-wrap: wrap;
+  padding: 20px;
+}

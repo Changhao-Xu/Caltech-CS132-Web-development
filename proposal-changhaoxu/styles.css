@@ -1,0 +1,136 @@
+/*
+Name: Changhao Xu
+CS 132 Spring 2023 Final project
+Date: May 25, 2023
+This is the styles.css page for the e-commerce store.
+It is linked to all pages to give the site a consistent look and feel.
+The overall theme of the e-commerce website is minimalistic and modern aesthetic style,
+which will align with our target customers,
+who would appreciate clean, simple, yet elegant designs.
+*/
+
+body {
+  background-color:#fbfbfd;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, article, nav ul li a {
+  text-align: center;
+}
+
+h1, h2, nav {
+  font-weight: bold;
+}
+
+main {
+  background-color: #c2e7ff;
+}
+
+nav, #store, .search-container, .footer-container, .contact-form .form-group {
+  display: flex;
+}
+
+nav, #store, .search-container, .footer-container {
+  align-items: center;
+}
+
+nav {
+  background-color:#333;
+  justify-content: space-between;
+}
+
+.search-container, .footer-container {
+  justify-content:space-around;
+}
+
+.search-container select, .search-container input {
+  font-size: 1em;
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+main {
+  width: 80%;
+}
+
+article {
+  background-color: white;
+  width: 250px;
+  margin: 10px;
+  border-radius: 1em;
+}
+
+article, .contact-form input, .contact-form textarea {
+  padding: 10px;
+}
+
+#store img, #cart img, .contact-form button, .contact-form button {
+  cursor: pointer;
+}
+
+#store img, #cart img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 25px;
+}
+
+footer {
+  margin: 2em auto;
+  padding: 0 200px;
+}
+
+main, nav ul {
+  margin: auto auto;
+}
+
+nav ul li {
+  float: left; /* align next to each other horizontally from left to right */
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 1em 5em;
+}
+
+nav ul li a, .footer-container a {
+  text-decoration: none; /* no underline */
+}
+
+nav ul, footer a, footer p {
+  list-style-type: none;
+}
+
+/* ---------------------------------------------------------------------- Contact.html ------------------------------------------------------- */
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  padding: 50px;
+}
+
+.contact-form .form-group {
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+}

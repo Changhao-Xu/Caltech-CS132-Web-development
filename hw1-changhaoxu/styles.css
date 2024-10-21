@@ -1,0 +1,187 @@
+/*
+ * Author: Changhao Xu
+ * CS 132 Spring 2023
+ * Date: April 22, 2023
+ *
+ * This is the styles.css file for HW2, a webpage that introduces a brief history of HTML.
+ * This file contains responsive layout methods using CSS.
+ */
+
+body, nav ul, h1 {
+  margin: 0;
+}
+
+body {
+  font-family: 'Ubuntu', Verdana, sans-serif;
+  background-color: #c9e4ca;
+}
+
+p {
+  line-height: 1.4;
+}
+
+nav, #examples, aside {
+  background-color:#3b6065;
+}
+
+header, h1, h2, #fake-h1, section a, footer { /* p#fake-h1 is the same with #fake-h1 */
+  color: #3b6065;
+}
+
+header > div code, footer code, #fake-h1 { /* note that strong in html also works, but this is preferred */
+  font-weight: bold;
+}
+
+#fake-h1 {
+  font-size: 18pt;
+  margin-bottom: 0;
+}
+
+main > section, #examples > div {
+  background-color: #fdfdfd;
+}
+
+aside, aside a {
+  color: #fdfdfd;
+}
+
+nav a, aside a:visited {
+  color: #c9e4ca;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure figcaption, blockquote, #examples > div > p {
+  font-style: italic;
+}
+
+header code, footer code {
+  font-size: 24pt;
+}
+
+#tim-quote > figcaption, #examples > div > p {
+  text-align: right;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+main, nav ul, #html-comparison div {
+  padding: 5px;
+}
+
+main > section, pre, #examples {
+  padding: 10px;
+}
+
+pre {
+  background-color: #d3d3d3;
+  overflow-x: scroll;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
+footer, header > div, aside {
+  padding: 0 10px;
+}
+
+footer, header > div {
+  height: 60px;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
+aside {
+  margin-left: 10px;
+  min-width: 200px;
+}
+
+#examples img {
+  width: 160px;
+}
+
+#xkcd {
+  width: 50%;
+  max-width: 400px;
+}
+
+#w3c {
+  width: 120px;
+  margin: 0 20px 20px 20px;
+}
+
+#html-comparison {
+  text-align: center;
+}
+
+#html-comparison > div {
+  border: 4px solid black;
+  height: 300px;
+}
+
+#html-comparison > div div {
+  border: 2px solid black;
+}
+
+blockquote {
+  border-bottom: 2px solid black;
+}
+
+/* Provided starter: styles for all flex containers */
+body, main, header > div, footer, #examples, #examples > div, nav ul,
+#html-comparison, #html-comparison > div, .main-structure, .main-structure > div {
+  display: flex;
+}
+
+body, main, header > div, footer, #examples, #examples > div,
+#html-comparison, #html-comparison > div, .main-structure {
+  justify-content: space-between;
+}
+
+/* Provided starter: styles for flex containers that are in column layout */
+body, #examples > div, #html-comparison > div, .main-structure > div {
+  flex-direction: column;
+}
+
+header > div, footer {
+  align-items: center;
+}
+
+#examples {
+  margin: 5px;
+}
+
+#examples > div, #html-comparison > div {
+  width: 45%;
+}
+
+#examples > div {
+  padding: 0 2%;
+}
+
+figure {
+  float: right;
+}
+
+figure > img {
+  width: 100%;
+}
+
+.main-structure {
+  flex-grow: 1;
+}
+
+.main-structure > div {
+  width: 40%;
+}
